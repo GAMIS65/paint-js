@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Paint</title>
+</head>
+<body>
+    <h1 class="header">Paint</h1>
+    <div class="settings">
+        <label>Canvas size
+            <input type="number" min="1" id="canvas-size-input" value="16" onchange=updateCanvas()>px
+        </label>
+        <button class="settings-button-block" id="grid-toggle" onclick="toggleGrid()">Toggle Grid</button>
+        <button onclick="updateCanvas()" class="settings-button-block">Clear Canvas</button>
+        <p>Current color:</p>
+        <label>
+            <input type="color" id="color-input" onchange="changeColor()">
+        </label>
+        <p>Tools:</p>
+        <button class="settings-button" onclick="changeColor()">Pencil</button>
+        <button class="settings-button" onclick="changeColor('white')">Eraser</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

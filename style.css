@@ -1,0 +1,66 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   background-color: #1B262C;
+   font-size: 62.5%;
+   font-family: "Roboto Light", sans-serif;
+   color: #BBE1FA;
+}
+
+.header {
+   text-align: center;
+   font-size: 4rem;
+}
+
+.settings {
+   text-align: center;
+   font-size: 2rem;
+   padding-bottom: 2rem;
+}
+
+.settings input {
+   width: 5rem;
+   margin-bottom: 1rem;
+}
+
+.settings-button, .settings-button-block {
+   margin: auto auto 1rem;
+   background-color: #bbe1fa;
+   color: #1b262c;
+   text-decoration: none;
+   padding: 1rem;
+   border: solid #3282B8;
+}
+
+.settings-button-block {
+   display: block;
+}
+
+#canvas {
+   display: grid;
+   width: 60rem;
+   height: 60rem;
+   margin: auto;
+
+   user-drag: none;
+   -webkit-user-drag: none;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+
+.pixel {
+   background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+   #canvas {
+      width: 35rem;
+      height: 35rem;
+   }
+}
